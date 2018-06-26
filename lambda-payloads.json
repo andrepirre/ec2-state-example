@@ -1,0 +1,20 @@
+{
+    "ec2-state-example": {
+        "lambda": {
+            "version": "0",
+            "id": "f458c2de-7d52-c50c-84d0-79890b095af7",
+            "detail-type": "EC2 Instance State-change Notification",
+            "source": "aws.ec2",
+            "account": "447965258333",
+            "time": "2018-06-24T22:36:39Z",
+            "region": "us-west-2",
+            "resources": [
+                "arn:aws:ec2:us-west-2:447965258333:instance/i-0b7a087e5e8679295"
+            ],
+            "detail": {
+                "instance-id": "i-0eb0eab53ca2a7d41",
+                "state": "running"
+            }
+        }
+    }
+}

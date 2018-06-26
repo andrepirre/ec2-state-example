@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  ec2-state-example:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Description: ''
+      Handler: index.handler
+      MemorySize: 128
+      Role: 'arn:aws:iam::447965258333:role/service-role/ec2-state-example-role'
+      Runtime: nodejs8.10
+      Timeout: 3
+      Policies: 
+        - AmazonDynamoDBFullAccess
+        - AmazonEC2ReadOnlyAccess
